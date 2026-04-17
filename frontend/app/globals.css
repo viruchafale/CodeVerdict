@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  body {
+    @apply bg-page text-text antialiased;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer utilities {
+  .page-shell {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6;
+  }
+
+  .panel {
+    @apply rounded border border-line bg-panel shadow-panel;
+  }
+
+  .section-title {
+    @apply text-lg font-semibold text-text;
+  }
+}
